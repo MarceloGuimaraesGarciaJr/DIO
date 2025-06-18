@@ -1,0 +1,8 @@
+Comandos node jsa 
+
+npm init -y (incia projeto de forma automática, dando yes para tudo ); 
+
+node [nome do arquivo] - roda o arquivo 
+
+node --watch [nome dop arquivo ] roda arquivo com o nodewatch 
+
