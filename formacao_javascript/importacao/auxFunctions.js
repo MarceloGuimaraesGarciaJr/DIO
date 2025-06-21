@@ -1,5 +1,5 @@
 let i = 0;
-let notas = [5.5]
+let notas = [5.5, 8,2]
 function gets(){
     const valor = notas[i]
     i++
