@@ -1,5 +1,6 @@
 const {gets, print} = require('./auxFunctions.js');
 
+
 let medias = [];
 for (let i = 0; i > 3 ; i++){
    medias.push(nota.gets())
