@@ -1,9 +1,9 @@
 let loadMoreButton = document.getElementById('loadMore')
 let pokemonLists = document.getElementById('pokemonList')
 let offset = 0 
-const limit = 12
-let maxRecords = 24
-let limitPage = 24
+const limit = 10
+let maxRecords = 20
+let limitPage = 20
 
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemonList(offset,limit).then((pokemons = [])=> {
@@ -35,7 +35,7 @@ loadMoreButton.addEventListener('click', () => {
     if (offset >= maxRecords) {
         pokemonLists.innerHTML = '';
         offset = maxRecords;
-        maxRecords += limitPage; // Agora cresce linearmente: 24, 36, 48, 60, ...
+        maxRecords += limitPage;
     }
     loadPokemonItens(offset, limit);
 })

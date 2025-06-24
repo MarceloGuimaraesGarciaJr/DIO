@@ -1,0 +1,52 @@
+.container { 
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: red;
+    border-radius: 1rem;
+}
+.container .grass {
+    height: 1rem;
+}
+.container h1{
+    text-align: center;
+    color: antiquewhite;
+}
+
+.pokemonImage .img {
+    width: 10rem;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.detail ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+}
+.detail ol li{
+    border-radius: 0.5rem;
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+    margin: .2rem;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.detail .idNumber{
+    font-size: 0.9rem;
+    color: white;
+}
+
+.statsAndInfos {
+    border-radius: 1rem;
+    background-color: white;
+}

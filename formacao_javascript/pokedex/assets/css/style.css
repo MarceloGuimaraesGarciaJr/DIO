@@ -30,6 +30,48 @@ body{
     padding: .625rem;
 }
 
+.searchPokemon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.findMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pokeNotFind {
+    display: none;
+}
+#pokemonNameSearch{
+    padding: 0.2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin: .5rem;
+    padding: 1rem;
+    background-color: hsla(0, 0%, 0%, 0.445);
+    color: white;
+}
+#pokemonNameSearch:hover{
+    background-color: hsla(0, 0%, 0%, 0.226);
+}
+.searchButton {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    background-color: hsla(0, 0%, 0%, 0.445);
+    border: 1px solid hsla(0, 0%, 0%, 0.445);
+    color: white;
+}
+
+.searchButton:hover {
+
+    background-color: hsla(0, 0%, 0%, 0.185);
+
+}
+
 @media screen and (min-width: 992px) {
     .content {
         max-width:992px;
