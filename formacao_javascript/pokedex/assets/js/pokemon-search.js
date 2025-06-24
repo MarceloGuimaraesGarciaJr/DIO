@@ -28,18 +28,18 @@ function pokemonSearch () {
             }).then(response => pokemonApiToModel(response))
             .then(pokemon => {
                 console.log(pokemon)
-                const pokemonFinded = 
-            `   <li class="pokemon ${pokemon.type}">
+                const pokemonFinded = `
+                    <li class="pokemon ${pokemon.type}">
                         <span class="number">#${pokemon.order}</span>
-                        <span class="name">${pokemon.name}</span>
+                        <a href="pokemon-detail.html?pokemonName=${pokemon.name}"><span class="name">${pokemon.name}</span></a>
                         <div class="detail">
-                        <ol class="types">
+                            <ol class="types">
                             ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-                        </ol>
-                        <img src="${pokemon.photo}" alt="${pokemon.name}"/>
-                        </div>  
+                            </ol>
+                            <img src="${pokemon.photo}" alt="${pokemon.name}"/>
+                        </div>
                     </li>
-            `
+                    `
             pokemonLists.innerHTML = pokemonFinded
             }
 
