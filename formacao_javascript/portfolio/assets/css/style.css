@@ -45,7 +45,9 @@ header h1{
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
-    max-width: 80%;
+    max-width: 50%;
+    flex-direction: column;
+    width: 50%;
 }
 .main::before{
     content: '';
@@ -124,4 +126,19 @@ D
         margin: 0 auto;
         width: 250px;
     }
+ }
+
+  @media only screen and (max-width: 360px) {
+    header{
+        font-size: 12px;
+    }   
+ }
+
+ header a{ 
+    text-decoration: none;
+    color: #fff;
+ }
+  header a:hover{ 
+    text-decoration: underline;
+    color: #fff;
  }

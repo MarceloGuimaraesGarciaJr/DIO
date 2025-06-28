@@ -1,0 +1,78 @@
+.dual{
+    display: flex;
+    flex-direction: column;
+    list-style:none;
+
+}
+
+.skillsTools ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    
+}
+.skillsTools img{
+    max-width: 50px;
+    width: 5rem;
+    margin: 0.5rem;
+    justify-content: flex-start;
+
+}
+.skillsTools ul{
+    list-style: none;
+}
+
+.socialSkills ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    list-style: none;
+    padding-top: 1rem
+}
+.socialSkills ul li{
+    margin-left:0.5rem;
+    padding: 0.5rem;
+}
+.skillsTitle{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+}
+
+@media only screen and (min-width: 768px) {
+    header{
+        display: grid;
+        grid-template-areas: 
+        "photo title"
+        "photo infos";
+    }
+    .infos{
+        padding: 10px;
+        grid-area: infos;
+        margin: 0px 0px 0px 4rem;
+        text-align: left
+    }
+    .title{
+        grid-area: title;
+        margin:0 auto;
+        text-align: center;
+    }
+    .photo{
+        grid-area: photo;
+        margin: 0 auto;
+        width: 200px;
+    }
+ }
+
+ @media only screen and (min-width: 1024px) {
+    .dual{ 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+ }

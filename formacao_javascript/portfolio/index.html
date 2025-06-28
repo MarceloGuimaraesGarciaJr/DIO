@@ -5,23 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css-->
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/acordeon.css"/>
+    <link rel="stylesheet" href="./assets/css/languages.css">
+    <link rel="stylesheet" href="./assets/css/projects.css">
+    <link rel="stylesheet" href="./assets/css/experiences.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
     <!-- Normalize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
 <body>
-<div class="main">
+<main class="main">
     <header>
                 <img class="photo" src="./assets/img/marcelo.png" alt="foto-marcelo-jr"/>
                 <h1 class="mainTitle">Olá,<br> Eu sou <br> Marcelo G <br>Júnior</h1>  
             <div class="infos">
                 <p><img class="iconsInfo" src="./assets/icons/people.svg">Júnior Developer</p>
                 <p><img class="iconsInfo" src="./assets/icons/location.svg">Farroupilha - RS</p>
-                <p><img class="iconsInfo" src="./assets/icons/whatsapp.svg">(54) 98125-0935</p>
-                <p><img class="iconsInfo" src="./assets/icons/mail.svg">marcelo@1923studio.com.br</p>
+                <a href="tel:+5554981250935"><p><img class="iconsInfo" src="./assets/icons/whatsapp.svg">(54) 98125-0935</p></a>
+                <a href="mailto:marcelo@1923studio.com.br"><p><img class="iconsInfo" src="./assets/icons/mail.svg">marcelo@1923studio.com.br</p></a>
             </div>
     </header>
-</div>
+    <section class="acordion">
+        <button class="trigger">
+            <span class="titleAcordion"> 
+            Idiomas
+            </span>
+        </button>
+        <div class="content">
+            <ul class="languages">
+                <li>Português - Nativo</li>
+                <li>Inglês - Avançado</li>
+                <li>Espanhol - Básico</li>
+            </ul>
+        </div>
+    </section>
+
+     <section class="acordion">
+        <button class="trigger">
+            <span class="titleAcordion"> 
+            Projetos
+            </span>
+        </button>
+        <div class="content">
+            <ul class="portfolio">
+                <li><span class="titleContent github">Faça uma jangada </span> 
+                    <a href="www.terra.com.br">Faça uma jangada</a> 
+                </li>
+                <li><span class="titleContent github">Faça uma jangada </span> 
+                    <a href="www.terra.com.br">Faça uma jangada</a> 
+                </li>
+                <li><span class="titleContent github">Faça uma jangada </span> 
+                    <a href="www.terra.com.br">Faça uma jangada</a> 
+                </li>
+                <li><span class="titleContent github">Faça uma jangada </span> 
+                    <a href="www.terra.com.br">Faça uma jangada</a> 
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="acordion">
+        <button class="trigger">
+            <span class="titleAcordion"> 
+            Experiências
+            </span>
+        </button>
+        <div class="content">
+            <ul class="experiences">
+                <li>
+                    <div class="period">
+                        <span class="titleExp"> Chatbot Developer / n49</span>
+                        <span class=" titleExpPeriod"> Period - 2022 - 2025 </span>
+                    </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium mollitia voluptate repudiandae et beatae assumenda ullam quisquam, sunt libero reprehenderit fugiat, consectetur pariatur a alias eligendi praesentium hic quia.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="acordion open">
+        <button class="trigger">
+            <span class="titleAcordion"> 
+            Habilidades 
+            </span>
+        </button>
+        <div class="content">
+           <div class="dual"> 
+                <section class="skillsTools">
+                    <span class="skillsTitle">Skills</span>
+                <ul>
+                    <li><img src="./assets/icons/nodejs.svg" alt="nodejs"></li>
+                    <li><img src="./assets/icons/javascript.svg" alt="javascript"></li>
+                    <li><img src="./assets/icons/sql.svg" alt="sql"></li>
+                    <li><img src="./assets/icons/html5.svg" alt="html"></li>
+                    <li><img src="./assets/icons/css.svg" alt="css"></li>
+                    <li><img src="./assets/icons/github.svg" alt="github"></li>
+                    <li><img src="./assets/icons/git.svg" alt="git"></li>
+            
+                </ul>
+                </section>
+                
+                <section class="socialSkills">
+                    <span class="skillsTitle">Social Skills</span>
+                   <ul> 
+                    <li>Facilidade nas relações</li>
+                    <li>Trabalho em grupo</li>
+                    <li>Aprendizado Humano Máquin</li>
+                    <li>Aprendizado Humano Máquin</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+</main>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
