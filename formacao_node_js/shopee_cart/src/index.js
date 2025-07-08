@@ -1,5 +1,7 @@
 import createItem from "./services/itens.js";
 import * as cartService from "./services/cart.js"
+import * as wishlistService from  "./services/wishlist.js"
+
 const cart = []; 
 const myWhishList = [];
 
@@ -28,7 +30,18 @@ console.log('Shopee Cart total:');
 await cartService.cartTotal(cart);
 
 
+//adicionando a wishlist 
+console.log('\n')
+console.log('Wishlist')
+wishlistService.addWishlist(myWhishList,item1);
+wishlistService.addWishlist(myWhishList,item2);
+wishlistService.displayWishlist(myWhishList);
 
+console.log('\n')
+console.log('Wishlist after removal method')
+
+wishlistService.removeWishList(myWhishList,1);
+wishlistService.displayWishlist(myWhishList);
 
 
 
