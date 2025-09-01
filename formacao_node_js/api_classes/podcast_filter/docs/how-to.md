@@ -26,3 +26,5 @@ Retornar categorias em formato json via API
         category:["sports","racing"]
     }
 ```
+
+GET: retorna lista de episódios baseado em um parâmetro enviado pelo client 

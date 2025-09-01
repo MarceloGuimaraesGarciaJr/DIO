@@ -1,5 +1,5 @@
 
-export interface podcast {
+export interface podcastModel {
     podcastName:string,
     episode:string,
     videoId:string,
