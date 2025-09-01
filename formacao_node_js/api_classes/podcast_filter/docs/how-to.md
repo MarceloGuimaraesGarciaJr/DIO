@@ -1,30 +1,40 @@
-#Podcast manager 
-### Descrição do projeto 
-Criar uma bibliteca ao estilo netflix onde estejam centralizados podcasts categorizados. 
-### Features 
-- Listar podcasts (episódios) em sessões de categorias: 
-    - Saúde 
-    - Fitness
-    - Humorra
-- Filtrar episódios por nome de podcast 
+#🎧 Podcast Manager
+📌 Descrição
 
-### how-to 
-Retornar categorias em formato json via API 
-```js 
-    {
-        podcastName:"flow",
-        episode:"CBUM - Flow #319",
-        cover:"hrtmll",
-        link:"https://",
-        category:["sports","racing"]
-    },
-    {
-        podcastName:"flow",
-        episode:"CBUM - Flow #319",
-        cover:"hrtmll",
-        link:"https://",
-        category:["sports","racing"]
-    }
-```
+O Podcast Manager é uma aplicação estilo Netflix que centraliza podcasts categorizados em diferentes seções.
+Ele permite visualizar episódios organizados por categorias e buscar episódios por nome de podcast através de uma API.
 
-GET: retorna lista de episódios baseado em um parâmetro enviado pelo client 
+##✨ Features
+
+- 📂 Listagem de podcasts (episódios) em categorias:
+
+- Saúde 🩺
+
+- Fitness 🏋️‍♂️
+
+- Humor 😂
+
+🔍 Filtro de episódios por nome do podcast
+
+📡 API que retorna dados em formato JSON
+
+📦 Estrutura do JSON
+
+A API retorna os episódios no seguinte formato:
+
+[
+  {
+    "podcastName": "flow",
+    "episode": "CBUM - Flow #319",
+    "cover": "https://link-da-imagem.com/cbum.jpg",
+    "link": "https://link-para-o-episodio.com",
+    "category": ["sports", "racing"]
+  },
+  {
+    "podcastName": "nerdcast",
+    "episode": "Especial RPG 2025",
+    "cover": "https://link-da-imagem.com/rpg.jpg",
+    "link": "https://link-para-o-episodio.com",
+    "category": ["geek", "rpg"]
+  }
+]
