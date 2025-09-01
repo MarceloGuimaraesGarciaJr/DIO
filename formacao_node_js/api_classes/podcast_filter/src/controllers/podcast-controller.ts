@@ -4,8 +4,6 @@ import { serviceFilterEpisodes } from "../services/filter-episodes"
 
 
 
-
-
 export const  getEpisodesList = async (req:IncomingMessage, res: ServerResponse) => {
 
     const content = await listEpisodes()
@@ -16,7 +14,9 @@ export const  getEpisodesList = async (req:IncomingMessage, res: ServerResponse)
 
 export const getFilterEpisodes = async (req:IncomingMessage, res: ServerResponse) =>{
    
-    const content = await serviceFilterEpisodes("Inteligencia LTDAs")
+    
+    const content = await serviceFilterEpisodes(req.url ?? null);
+
     res.writeHead(200,{ 'Content-Type': 'application/json'})
     res.end(JSON.stringify({content}))
 
